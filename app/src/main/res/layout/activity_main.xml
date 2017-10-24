@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karl.mysharedpreference.MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="69dp"
+        android:layout_alignBottom="@+id/et_password"
+        android:layout_alignRight="@+id/tv"
+        android:layout_alignEnd="@+id/tv" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="55dp"
+        android:layout_alignTop="@+id/tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_alignStart="@+id/et_password" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/et_password"
+        android:layout_toStartOf="@+id/et_password"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Info"
+        android:onClick="saveInfo"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Info"
+        android:onClick="loadinfo"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignBottom="@+id/btn_save"
+        android:layout_toRightOf="@+id/btn_save"
+        android:layout_toEndOf="@+id/btn_save" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The password of karl is awing"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:layout_below="@+id/btn_save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+</RelativeLayout>
